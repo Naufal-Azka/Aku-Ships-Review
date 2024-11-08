@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE WEBSITE -->
+    <title>Aku's Ships Review</title>
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="src/misc/icon.ico" type="image/x-icon" />
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FONTS LINK -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="root" class="root">
+      <!-- NAVIGATION BAR -->
+      <section class="navbar" id="navbar">
+        <ul class="navbar--list float--left container--flex--row">
+          <li>
+            <a href="#home"
+              ><img src="src/misc/icon.png" alt="" draggable="false"
+            /></a>
+          </li>
+          <li>
+            <a href="#home" class="navbar--list--content">Aku's Ships Review</a>
+          </li>
+        </ul>
+
+        <ul class="navbar--list float--right container--flex--row">
+          <li>
+            <a href="#shiplist" class="navbar--list--content">Ships List</a>
+          </li>
+          <li>
+            <a href="#discussion" class="navbar--list--content"> Discussion </a>
+          </li>
+        </ul>
+      </section>
+      <!-- NAVIGATION BAR -->
+
+      <!-- HOME SECTION-->
+      <section class="home" id="home">
+        <div class="home--container container--flex">
+          <div class="home--container--text" data-aos="fade-right">
+            <h1 class="text--h1">
+              Aku's <span style="font-weight: bold">Ships review</span>
+            </h1>
+            <hr style="width: 90%; color: black" />
+            <p class="text--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              officia?
+            </p>
+          </div>
+        </div>
+        <div class="arrowdown container--flex" id="arrowdown">
+          <a href="#shiplist"><img src="src/misc/arrowdown.svg" alt="" /></a>
+        </div>
+      </section>
+      <!-- HOME SECTION-->
+
+      <!-- SPLITTER SECTION -->
+      <section class="split" id="split">
+        <div class="split--container">
+          <!-- FENDI, FRISKA -->
+          <p class="text--para">
+            &copy;Naufal Azka Putra Difa 2024 | All rights reserved
+          </p>
+        </div>
+      </section>
+      <!-- SPLITTER SECTION -->
+
+      <!-- SHiPS LIST SECTION-->
+      <section class="shiplist" id="shiplist">
+        <div class="shiplist--container" id="shiplist--container">
+          <!-- <div class="shiplist--container--title">
+            <h1 class="text--h1">Ship List</h1>
+          </div> -->
+          <div class="shiplist--container--list">
+            <ul class="shiplist--container--list--class container--flex--row">
+              <li id=""><a href="#mainBB">BB/BC/BBV/BM/IXm</a></li>
+              <li id=""><a href="#mainCV">CV/CVL</a></li>
+              <li id=""><a href="#vanguardCA">CA/CB</a></li>
+              <li id=""><a href="#vanguardCL">CL/IXv</a></li>
+              <li id=""><a href="#vanguardDD">DD/DDG</a></li>
+              <li id=""><a href="#submarine">SS/SSV/IXs</a></li>
+              <li id=""><a href="#other">Other</a></li>
+            </ul>
+          </div>
+          <div class="shiplist--container--class--title">
+            <h3 class="text--h3" id="mainBB">BB/BC/BBV/BM/IXm</h3>
+          </div>
+          <div
+            class="shiplist--container--ship container--flex--row"
+            id="shipBB--BC--BBV--BM--IXm"
+            data-class-type=""
+            data-aos="zoom-in-down"
+          ></div>
+          <div class="shiplist--container--class--title">
+            <h3 class="text--h3" id="mainCV">CV/CVL</h3>
+          </div>
+          <div
+            class="shiplist--container--ship container--flex--row"
+            id="shipCV--CVL"
+            data-class-type=""
+            data-aos="zoom-in-down"
+          ></div>
+          <div class="shiplist--container--class--title">
+            <h3 class="text--h3" id="vanguardCA">CA-CB</h3>
+          </div>
+          <div
+            class="shiplist--container--ship container--flex--row"
+            id="shipCA--CB"
+            data-class-type=""
+            data-aos="zoom-in-down"
+          ></div>
+          <div class="shiplist--container--class--title">
+            <h3 class="text--h3" id="vanguardCL">CL</h3>
+          </div>
+          <div
+            class="shiplist--container--ship container--flex--row"
+            id="shipCL--IXv"
+            data-class-type=""
+            data-aos="zoom-in-down"
+          ></div>
+          <div class="shiplist--container--class--title">
+            <h3 class="text--h3" id="vanguardDD">DD/DDG</h3>
+          </div>
+          <div
+            class="shiplist--container--ship container--flex--row"
+            id="shipDD--DDG"
+            data-class-type=""
+            data-aos="zoom-in-down"
+          ></div>
+        </div>
+      </section>
+      <!-- SHiPS LIST SECTION-->
+
+      <!-- DISCUSSION SECTION -->
+      <section class="discussion" id="discussion">
+        <div class="discussion--container">
+          <div class="discussion--container--title container--flex--row">
+            <img src="src/misc/discussionSection.svg" alt="" />
+            <h1 class="text--h1">Discussion</h1>
+          </div>
+          <div class="discussion--container--form" data-aos="fade-right">
+            <form action="" class="discussion--container--form--post">
+              <div class="label--title">
+                <label for="name--value">Name : </label>
+              </div>
+              <div class="text--field">
+                <input
+                  type="text"
+                  name="name--value"
+                  id="name--value"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="label--title">
+                <label for="comment--value">Comment : </label>
+              </div>
+              <div class="text--area--field">
+                <textarea
+                  rows="3"
+                  name="comment--value"
+                  id="comment--value"
+                  placeholder="Enter your comment"
+                ></textarea>
+              </div>
+              <div class="submit--btn">
+                <button type="button" onclick="addDiscussion()">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="discussion--container--list--title container--flex--row">
+            <img src="src/misc/discussionComment.svg" alt="" />
+            <h1 class="text--h1">Discuss your oppinion</h1>
+          </div>
+          <div
+            class="discussion--container--list--post"
+            id="discussion--container--list--post"
+          ></div>
+        </div>
+      </section>
+      <!-- DISCUSSION SECTION -->
+    </div>
+
+    <!-- JS LINK -->
+    <script src="script.js"></script>
+
+    <!-- AOS LINK-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
