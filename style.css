@@ -190,7 +190,7 @@ th {
 .shiplist{
     background-image: url("src/misc/star_level_bg_1.png");
     background-size: contain;
-    background-repeat: repeat-y;
+    background-repeat: repeat;
     padding-bottom: 20vh;
 }
 .shiplist .shiplist--container{

@@ -74,16 +74,219 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// //FILTER
+// document.querySelectorAll(".shiplist .shiplist--container .shiplist--container--list--class li").forEach((li) => {
+//   li.addEventListener("click", () => {
+//     const filter = li.getAttribute("data-filter");
+//     filterShip(filter);
+//   })
+// })
+
+// function filterShip(filter) {
+//   let container;
+//   // console.log(filter)
+
+//   const shiplistContainer = document.getElementById("shiplist--container--ship");
+//   const conta = document.getElementById("shiplist--container")
+
+//   const divConta = document.createElement("div");
+//   divConta.id = "shiplist--container--ship";
+  
+//   conta.appendChild(divConta);
+
+//   const divTitle = document.createElement("h3");
+  
+//   const divFill = document.createElement("div")
+//   divFill.classList.add("shiplist--container--ship", "container--flex--row");
+  
+//   divConta.append(divTitle)
+//   divConta.append(divFill)
+
+//   shiplistContainer.remove()
+  
+//   if (filter === "BB__BC__BBV__BM__IXm") {
+//     divTitle.textContent = "BB/BC/BBV/BM/IXm"
+
+//     shipJSON.forEach((ship) => {
+      
+//       if (ship.type === "Battleship" || ship.type === "Aviation Battleship") { container = divFill; }
+//       else { return; }
+
+//       if (container) {
+//         const htmlContent = `
+//           <div class="shiplist--container--ship--card">
+//             <div class="shiplist--container--ship--card--img">
+//               <img src="${ship.image.potrait}" alt="${ship.name}" data-index="${ship.id}" draggable="false"/>
+//             </div>
+//             <div class="shiplist--container--ship--card--title">
+//               <h4>${ship.name}</h4>
+//             </div>
+//           </div>
+//         `;
+
+//         container.insertAdjacentHTML("beforeend", htmlContent)
+//         addEventListenerToCard();
+//       }
+//     });
+//   }
+//   if (filter === "CV__CVL") {
+//     divTitle.textContent = "CV/CVL"
+
+//     shipJSON.forEach((ship) => {
+//       if (ship.type === "Aircraft Carrier") { container = divFill; }
+//       else { return; }
+
+//       if (container) {
+//         const htmlContent = `
+//           <div class="shiplist--container--ship--card">
+//             <div class="shiplist--container--ship--card--img">
+//               <img src="${ship.image.potrait}" alt="${ship.name}" data-index="${ship.id}" draggable="false"/>
+//             </div>
+//             <div class="shiplist--container--ship--card--title">
+//               <h4>${ship.name}</h4>
+//             </div>
+//           </div>
+//         `;
+
+//         container.insertAdjacentHTML("beforeend", htmlContent)
+//         addEventListenerToCard()
+//       }
+//     });
+//   }
+//   if (filter === "CA__CB") {
+//     divTitle.textContent = "CA/CB"
+
+//     shipJSON.forEach((ship) => {
+//       if (ship.type === "Heavy Cruiser" || ship.type === "Large Cruiser") { container = divFill; }
+//       else { return; }
+
+//       if (container) {
+//         const htmlContent = `
+//           <div class="shiplist--container--ship--card">
+//             <div class="shiplist--container--ship--card--img">
+//               <img src="${ship.image.potrait}" alt="${ship.name}" data-index="${ship.id}" draggable="false"/>
+//             </div>
+//             <div class="shiplist--container--ship--card--title">
+//               <h4>${ship.name}</h4>
+//             </div>
+//           </div>
+//         `;
+
+//         container.insertAdjacentHTML("beforeend", htmlContent)
+//         addEventListenerToCard()
+//       }
+//     });
+//   }
+//   if (filter === "CL__IXv") {
+//     divTitle.textContent = "CL/IXv"
+
+//     shipJSON.forEach((ship) => {
+//       if (ship.type === "Light Cruiser") { container = divFill; }
+//       else { return; }
+
+//       if (container) {
+//         const htmlContent = `
+//           <div class="shiplist--container--ship--card">
+//             <div class="shiplist--container--ship--card--img">
+//               <img src="${ship.image.potrait}" alt="${ship.name}" data-index="${ship.id}" draggable="false"/>
+//             </div>
+//             <div class="shiplist--container--ship--card--title">
+//               <h4>${ship.name}</h4>
+//             </div>
+//           </div>
+//         `;
+
+//         container.insertAdjacentHTML("beforeend", htmlContent)
+//         addEventListenerToCard()
+//       }
+//     });
+//   }
+//   if (filter === "DD__DDG") {
+//     divTitle.textContent = "DD/DDG"
+
+//     shipJSON.forEach((ship) => {
+//       if (ship.type === "Destroyer") { container = divFill; }
+//       else { return; }
+
+//       if (container) {
+//         const htmlContent = `
+//           <div class="shiplist--container--ship--card">
+//             <div class="shiplist--container--ship--card--img">
+//               <img src="${ship.image.potrait}" alt="${ship.name}" data-index="${ship.id}" draggable="false"/>
+//             </div>
+//             <div class="shiplist--container--ship--card--title">
+//               <h4>${ship.name}</h4>
+//             </div>
+//           </div>
+//         `;
+
+//         container.insertAdjacentHTML("beforeend", htmlContent)
+//         addEventListenerToCard()
+//       }
+//     });
+//   }
+// }
+
+
+const shipFilters = {
+  "BB__BC__BBV__BM__IXm": { title: "BB/BC/BBV/BM/IXm", types: ["Battleship", "Aviation Battleship"] },
+  "CV__CVL": { title: "CV/CVL", types: ["Aircraft Carrier"] },
+  "CA__CB": { title: "CA/CB", types: ["Heavy Cruiser", "Large Cruiser"] },
+  "CL__IXv": { title: "CL/IXv", types: ["Light Cruiser"] },
+  "DD__DDG": { title: "DD/DDG", types: ["Destroyer"] }
+};
+
 document.querySelectorAll(".shiplist .shiplist--container .shiplist--container--list--class li").forEach((li) => {
   li.addEventListener("click", () => {
     const filter = li.getAttribute("data-filter");
     filterShip(filter);
-  })
-})
+  });
+});
 
 function filterShip(filter) {
-  console.log(filter)
+  const shiplistContainer = document.getElementById("shiplist--container--ship");
+  const conta = document.getElementById("shiplist--container");
+
+  // Buat kontainer baru untuk ship list
+  const divConta = document.createElement("div");
+  divConta.id = "shiplist--container--ship";
+  conta.appendChild(divConta);
+
+  const divTitle = document.createElement("h3");
+  const divFill = document.createElement("div");
+  divFill.classList.add("shiplist--container--ship", "container--flex--row");
+
+  // Set judul dari filter yang dipilih
+  const selectedFilter = shipFilters[filter];
+  divTitle.textContent = selectedFilter.title;
+  divConta.append(divTitle);
+  divConta.append(divFill);
+
+  // Hapus kontainer lama
+  shiplistContainer.remove();
+
+  // Filter ship berdasarkan jenis tipe yang sesuai
+  shipJSON.forEach((ship) => {
+    if (selectedFilter.types.includes(ship.type)) {
+      const htmlContent = `
+        <div class="shiplist--container--ship--card">
+          <div class="shiplist--container--ship--card--img">
+            <img src="${ship.image.potrait}" alt="${ship.name}" data-index="${ship.id}" draggable="false"/>
+          </div>
+          <div class="shiplist--container--ship--card--title">
+            <h4>${ship.name}</h4>
+          </div>
+        </div>
+      `;
+
+      divFill.insertAdjacentHTML("beforeend", htmlContent);
+    }
+  });
+
+  // Tambahkan event listener ke card baru
+  addEventListenerToCard();
 }
+
 
 
 //CREATE CARD
