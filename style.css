@@ -15,7 +15,6 @@
     color: black;
     /* FONT */
 
-    scrollbar-width: none;
     scroll-behavior: smooth;
     scroll-margin-top: 11.5vh;
 }
@@ -192,7 +191,6 @@ th {
     background-image: url("src/misc/star_level_bg_1.png");
     background-size: contain;
     background-repeat: repeat-y;
-
     padding-bottom: 20vh;
 }
 .shiplist .shiplist--container{
@@ -209,14 +207,20 @@ th {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding-block: 5rem;
 }
 .shiplist .shiplist--container .shiplist--container--list .shiplist--container--list--class li{
     padding: 13px;
     border-radius: 30px;
+    cursor: pointer;
 }
 .shiplist .shiplist--container .shiplist--container--list .shiplist--container--list--class a{
     font-weight: 300;
     font-size: 16px;
+}
+.active__filter{
+    background-color: black;
+    color: white;
 }
 .shiplist .shiplist--container .shiplist--container--class--title{
     text-align: center;

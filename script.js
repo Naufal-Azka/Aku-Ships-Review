@@ -73,6 +73,19 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchJSON();
 });
 
+
+document.querySelectorAll(".shiplist .shiplist--container .shiplist--container--list--class li").forEach((li) => {
+  li.addEventListener("click", () => {
+    const filter = li.getAttribute("data-filter");
+    filterShip(filter);
+  })
+})
+
+function filterShip(filter) {
+  console.log(filter)
+}
+
+
 //CREATE CARD
 function createCard() {
   const containerBB_BBV = document.getElementById("shipBB--BC--BBV--BM--IXm")
