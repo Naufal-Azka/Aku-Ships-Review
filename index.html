@@ -24,23 +24,23 @@
     <div id="root" class="root">
       <!-- NAVIGATION BAR -->
       <section class="navbar" id="navbar">
-        <ul class="navbar--list float--left container--flex--row">
+        <ul class="navbar__list float__left flex__row">
           <li>
             <a href="#home"
               ><img src="src/misc/icon.png" alt="" draggable="false"
             /></a>
           </li>
           <li>
-            <a href="#home" class="navbar--list--content">Aku's Ships Review</a>
+            <a href="#home" class="navbar__list__content">Aku's Ships Review</a>
           </li>
         </ul>
 
-        <ul class="navbar--list float--right container--flex--row">
+        <ul class="navbar--list float__right flex__row">
           <li>
-            <a href="#shiplist" class="navbar--list--content">Ships List</a>
+            <a href="#shiplist" class="navbar__list__content">Ships List</a>
           </li>
           <li>
-            <a href="#discussion" class="navbar--list--content"> Discussion </a>
+            <a href="#discussion" class="navbar__list__content"> Discussion </a>
           </li>
         </ul>
       </section>
@@ -48,19 +48,19 @@
 
       <!-- HOME SECTION-->
       <section class="home" id="home">
-        <div class="home--container container--flex">
-          <div class="home--container--text" data-aos="fade-right">
-            <h1 class="text--h1">
+        <div class="home__container flex">
+          <div class="home__container__text" data-aos="fade-right">
+            <h1 class="text__h1">
               Aku's <span style="font-weight: bold">Ships review</span>
             </h1>
             <hr style="width: 90%; color: black" />
-            <p class="text--para">
+            <p class="text__para">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
               officia?
             </p>
           </div>
         </div>
-        <div class="arrowdown container--flex" id="arrowdown">
+        <div class="arrowdown flex" id="arrowdown">
           <a href="#shiplist"><img src="src/misc/arrowdown.svg" alt="" /></a>
         </div>
       </section>
@@ -68,9 +68,9 @@
 
       <!-- SPLITTER SECTION -->
       <section class="split" id="split">
-        <div class="split--container">
+        <div class="split__container">
           <!-- FENDI, FRISKA -->
-          <p class="text--para">
+          <p class="text__para">
             &copy;Naufal Azka Putra Difa 2024 | All rights reserved
           </p>
         </div>
@@ -84,12 +84,14 @@
             <h1 class="text--h1">Ship List</h1>
           </div> -->
           <div class="shiplist--container--list">
-            <ul class="shiplist--container--list--class container--flex--row">
-              <li data-filter="BB__BC__BBV__BM__IXm">BB/BC/BBV/BM/IXm</li>
-              <li data-filter="CV__CVL">CV/CVL</li>
-              <li data-filter="CA__CB">CA/CB</li>
-              <li data-filter="CL__IXv">CL/IXv</li>
-              <li data-filter="DD__DDG">DD/DDG</li>
+            <ul class="shiplist--container--list--class flex__row">
+              <li data-filter="BB__BC__BBV__BM__IXm" class="">
+                BB/BC/BBV/BM/IXm
+              </li>
+              <li data-filter="CV__CVL" class="">CV/CVL</li>
+              <li data-filter="CA__CB" class="">CA/CB</li>
+              <li data-filter="CL__IXv" class="">CL/IXv</li>
+              <li data-filter="DD__DDG" class="">DD/DDG</li>
               <!-- <li data-filter="SS__SSV__IXs">SS/SSV/IXs</li>
               <li data-filter="AE__AR">Other</li> -->
             </ul>
@@ -99,7 +101,7 @@
               <h3 class="text--h3" id="mainBB">BB/BC/BBV/BM/IXm</h3>
             </div>
             <div
-              class="shiplist--container--ship container--flex--row"
+              class="shiplist--container--ship flex__row"
               id="shipBB--BC--BBV--BM--IXm"
               data-aos="zoom-in-down"
             ></div>
@@ -107,7 +109,7 @@
               <h3 class="text--h3" id="mainCV">CV/CVL</h3>
             </div>
             <div
-              class="shiplist--container--ship container--flex--row"
+              class="shiplist--container--ship flex__row"
               id="shipCV--CVL"
               data-aos="zoom-in-down"
             ></div>
@@ -115,7 +117,7 @@
               <h3 class="text--h3" id="vanguardCA">CA-CB</h3>
             </div>
             <div
-              class="shiplist--container--ship container--flex--row"
+              class="shiplist--container--ship flex__row"
               id="shipCA--CB"
               data-aos="zoom-in-down"
             ></div>
@@ -123,7 +125,7 @@
               <h3 class="text--h3" id="vanguardCL">CL</h3>
             </div>
             <div
-              class="shiplist--container--ship container--flex--row"
+              class="shiplist--container--ship flex__row"
               id="shipCL--IXv"
               data-aos="zoom-in-down"
             ></div>
@@ -131,7 +133,7 @@
               <h3 class="text--h3" id="vanguardDD">DD/DDG</h3>
             </div>
             <div
-              class="shiplist--container--ship container--flex--row"
+              class="shiplist--container--ship flex__row"
               id="shipDD--DDG"
               data-aos="zoom-in-down"
             ></div>
@@ -143,7 +145,7 @@
       <!-- DISCUSSION SECTION -->
       <section class="discussion" id="discussion">
         <div class="discussion--container">
-          <div class="discussion--container--title container--flex--row">
+          <div class="discussion--container--title flex__row">
             <img src="src/misc/discussionSection.svg" alt="" />
             <h1 class="text--h1">Discussion</h1>
           </div>
@@ -176,7 +178,7 @@
               </div>
             </form>
           </div>
-          <div class="discussion--container--list--title container--flex--row">
+          <div class="discussion--container--list--title flex__row">
             <img src="src/misc/discussionComment.svg" alt="" />
             <h1 class="text--h1">Discuss your oppinion</h1>
           </div>

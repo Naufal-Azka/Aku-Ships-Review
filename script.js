@@ -226,8 +226,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //     });
 //   }
 // }
-
-
 const shipFilters = {
   "BB__BC__BBV__BM__IXm": { title: "BB/BC/BBV/BM/IXm", types: ["Battleship", "Aviation Battleship"] },
   "CV__CVL": { title: "CV/CVL", types: ["Aircraft Carrier"] },
@@ -236,36 +234,41 @@ const shipFilters = {
   "DD__DDG": { title: "DD/DDG", types: ["Destroyer"] }
 };
 
+
 document.querySelectorAll(".shiplist .shiplist--container .shiplist--container--list--class li").forEach((li) => {
   li.addEventListener("click", () => {
     const filter = li.getAttribute("data-filter");
     filterShip(filter);
+
+    document.querySelectorAll(".shiplist .shiplist--container .shiplist--container--list--class li").forEach((item) => {
+      item.classList.remove("active__filter")
+    });
+    li.classList.add("active__filter");
   });
 });
+
 
 function filterShip(filter) {
   const shiplistContainer = document.getElementById("shiplist--container--ship");
   const conta = document.getElementById("shiplist--container");
 
-  // Buat kontainer baru untuk ship list
   const divConta = document.createElement("div");
   divConta.id = "shiplist--container--ship";
   conta.appendChild(divConta);
 
   const divTitle = document.createElement("h3");
+  divTitle.className = "text--h3";
+
   const divFill = document.createElement("div");
   divFill.classList.add("shiplist--container--ship", "container--flex--row");
 
-  // Set judul dari filter yang dipilih
   const selectedFilter = shipFilters[filter];
   divTitle.textContent = selectedFilter.title;
   divConta.append(divTitle);
   divConta.append(divFill);
 
-  // Hapus kontainer lama
   shiplistContainer.remove();
 
-  // Filter ship berdasarkan jenis tipe yang sesuai
   shipJSON.forEach((ship) => {
     if (selectedFilter.types.includes(ship.type)) {
       const htmlContent = `
@@ -283,7 +286,6 @@ function filterShip(filter) {
     }
   });
 
-  // Tambahkan event listener ke card baru
   addEventListenerToCard();
 }
 
