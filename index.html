@@ -40,7 +40,7 @@
             <a href="#shiplist" class="navbar__list__content">Ships List</a>
           </li>
           <li>
-            <a href="#discussion" class="navbar__list__content"> Discussion </a>
+            <a href="#discussion" class="navbar__list__content">Discussion</a>
           </li>
         </ul>
       </section>
@@ -79,62 +79,59 @@
 
       <!-- SHiPS LIST SECTION-->
       <section class="shiplist" id="shiplist">
-        <div class="shiplist--container" id="shiplist--container">
-          <!-- <div class="shiplist--container--title">
-            <h1 class="text--h1">Ship List</h1>
-          </div> -->
-          <div class="shiplist--container--list">
-            <ul class="shiplist--container--list--class flex__row">
-              <li data-filter="BB__BC__BBV__BM__IXm" class="">
+        <div class="shiplist__container" id="shiplist-container">
+          <div class="shiplist__container__list">
+            <ul class="shiplist__container__list__class flex__row">
+              <li data-filter="BB-BC-BBV-BM-IXm" class="active__filter">
                 BB/BC/BBV/BM/IXm
               </li>
-              <li data-filter="CV__CVL" class="">CV/CVL</li>
-              <li data-filter="CA__CB" class="">CA/CB</li>
-              <li data-filter="CL__IXv" class="">CL/IXv</li>
-              <li data-filter="DD__DDG" class="">DD/DDG</li>
-              <!-- <li data-filter="SS__SSV__IXs">SS/SSV/IXs</li>
-              <li data-filter="AE__AR">Other</li> -->
+              <li data-filter="CV-CVL">CV/CVL</li>
+              <li data-filter="CA-CB">CA/CB</li>
+              <li data-filter="CL-IXv">CL/IXv</li>
+              <li data-filter="DD-DDG">DD/DDG</li>
+              <!-- <li data-filter="SS-SSV-IXs">SS/SSV/IXs</li>
+              <li data-filter="AE-AR">Other</li> -->
             </ul>
           </div>
-          <div id="shiplist--container--ship">
-            <div class="shiplist--container--class--title">
-              <h3 class="text--h3" id="mainBB">BB/BC/BBV/BM/IXm</h3>
+          <div id="shiplist-container-ship">
+            <div class="shiplist__container__class__title">
+              <h3 class="text__h3">BB/BC/BBV/BM/IXm</h3>
             </div>
             <div
-              class="shiplist--container--ship flex__row"
-              id="shipBB--BC--BBV--BM--IXm"
+              class="shiplist__container__ship flex__row"
+              id="shipBB-BC-BBV-BM-IXm"
               data-aos="zoom-in-down"
             ></div>
-            <div class="shiplist--container--class--title">
-              <h3 class="text--h3" id="mainCV">CV/CVL</h3>
+            <div class="shiplist__container__class__title">
+              <h3 class="text__h3">CV/CVL</h3>
             </div>
             <div
-              class="shiplist--container--ship flex__row"
-              id="shipCV--CVL"
+              class="shiplist__container__ship flex__row"
+              id="shipCV-CVL"
               data-aos="zoom-in-down"
             ></div>
-            <div class="shiplist--container--class--title">
-              <h3 class="text--h3" id="vanguardCA">CA-CB</h3>
+            <div class="shiplist__container__class__title">
+              <h3 class="text__h3">CA-CB</h3>
             </div>
             <div
-              class="shiplist--container--ship flex__row"
-              id="shipCA--CB"
+              class="shiplist__container__ship flex__row"
+              id="shipCA-CB"
               data-aos="zoom-in-down"
             ></div>
-            <div class="shiplist--container--class--title">
-              <h3 class="text--h3" id="vanguardCL">CL</h3>
+            <div class="shiplist__container__class__title">
+              <h3 class="text__h3">CL</h3>
             </div>
             <div
-              class="shiplist--container--ship flex__row"
-              id="shipCL--IXv"
+              class="shiplist__container__ship flex__row"
+              id="shipCL-IXv"
               data-aos="zoom-in-down"
             ></div>
-            <div class="shiplist--container--class--title">
-              <h3 class="text--h3" id="vanguardDD">DD/DDG</h3>
+            <div class="shiplist__container__class__title">
+              <h3 class="text__h3">DD/DDG</h3>
             </div>
             <div
-              class="shiplist--container--ship flex__row"
-              id="shipDD--DDG"
+              class="shiplist__container__ship flex__row"
+              id="shipDD-DDG"
               data-aos="zoom-in-down"
             ></div>
           </div>
@@ -144,51 +141,50 @@
 
       <!-- DISCUSSION SECTION -->
       <section class="discussion" id="discussion">
-        <div class="discussion--container">
-          <div class="discussion--container--title flex__row">
+        <div class="discussion__container">
+          <div class="discussion__container__title flex__row">
             <img src="src/misc/discussionSection.svg" alt="" />
-            <h1 class="text--h1">Discussion</h1>
+            <h1 class="text__h1">Discussion</h1>
           </div>
-          <div class="discussion--container--form" data-aos="fade-right">
-            <form action="" class="discussion--container--form--post">
-              <div class="label--title">
-                <label for="name--value">Name : </label>
+          <div class="discussion__container__form" data-aos="fade-right">
+            <form action="" class="discussion__container__form__post">
+              <div class="label__title">
+                <label for="name-value">Name : </label>
               </div>
-              <div class="text--field">
+              <div class="text__field">
                 <input
                   type="text"
-                  name="name--value"
-                  id="name--value"
+                  name="name-value"
+                  id="name-value"
                   placeholder="Enter your name"
                 />
               </div>
-              <div class="label--title">
-                <label for="comment--value">Comment : </label>
+              <div class="label__title">
+                <label for="comment-value">Comment : </label>
               </div>
-              <div class="text--area--field">
+              <div class="text__area__field">
                 <textarea
                   rows="3"
-                  name="comment--value"
-                  id="comment--value"
+                  name="comment-value"
+                  id="comment-value"
                   placeholder="Enter your comment"
                 ></textarea>
               </div>
-              <div class="submit--btn">
+              <div class="submit__btn">
                 <button type="button" onclick="addDiscussion()">Submit</button>
               </div>
             </form>
           </div>
-          <div class="discussion--container--list--title flex__row">
+          <div class="discussion___container__list__title flex__row">
             <img src="src/misc/discussionComment.svg" alt="" />
-            <h1 class="text--h1">Discuss your oppinion</h1>
+            <h1 class="text__h1">Discuss your oppinion</h1>
           </div>
           <div
-            class="discussion--container--list--post"
-            id="discussion--container--list--post"
+            class="discussion__container__list__post"
+            id="discussion-container-list-post"
           ></div>
         </div>
       </section>
-      <!-- DISCUSSION SECTION -->
     </div>
 
     <!-- JS LINK -->

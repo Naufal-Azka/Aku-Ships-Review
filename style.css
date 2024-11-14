@@ -173,14 +173,14 @@ th {
 
 
 /* SPLITTER SECTION */
-.split .split__container{
+.split__container{
     width: 100%;
-    height: 4vh;
+    height: 1.3rem;
     background-color: black;
 }
 .split__container .text__para{
-    padding-left: 1vw;
-    font-weight: 400;
+    padding-left: 1rem;
+    font-weight: 100;
     color: white;
 }
 /* SPLITTER SECTION */
@@ -193,7 +193,7 @@ th {
     background-repeat: repeat;
     padding-bottom: 20vh;
 }
-.shiplist .shiplist--container{
+.shiplist__container{
     background-color: white;
     margin-inline: 8.8vw;
     padding-bottom: 8.8vh;
@@ -202,14 +202,14 @@ th {
     height: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.shiplist .shiplist--container .shiplist--container--list .shiplist--container--list--class{
+.shiplist__container__list__class{
     gap: 1rem;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding-block: 2rem;
 }
-.shiplist .shiplist--container .shiplist--container--list .shiplist--container--list--class li{
+.shiplist__container__list__class li{
     padding: 13px;
     border-radius: 30px;
     cursor: pointer;
@@ -220,22 +220,22 @@ th {
     background-color: black;
     color: white;
 }
- .text--h3{
+#shiplist-container-ship .text__h3{
     text-align: center;
     margin-block: 1.5rem;
 }
-.shiplist .shiplist--container .shiplist--container--ship{
+.shiplist__container__ship{
     flex-wrap: wrap;
 }
-.shiplist .shiplist--container .shiplist--container--ship .shiplist--container--ship--card{
+.shiplist__container__ship__card{
     transition: .5s;
     margin: 1rem 1.5rem;
 }
-.shiplist .shiplist--container .shiplist--container--ship .shiplist--container--ship--card .shiplist--container--ship--card--title{
+.shiplist__container__ship .shiplist__container__ship__card .shiplist__container__ship__card__title{
     text-align: center;
-    max-width: 124px;
+    max-width: 120px;
 }
-.shiplist .shiplist--container .shiplist--container--ship .shiplist--container--ship--card .shiplist--container--ship--card--img{
+.shiplist__container__ship .shiplist__container__ship__card .shiplist__container__ship__card__img{
     background: linear-gradient(120deg, #fbffca, #baffbf, #a7efff, #ffabff);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    padding: 4px;
     max-height: 124px;
@@ -248,19 +248,19 @@ th {
 .discussion{
     height: auto;
     width: 100%;
-    padding-block: 10vh;
-    padding-inline: 10vw;
+    padding-inline: 8rem;
+    padding-block: 4rem;
 }
-.discussion .discussion--container .discussion--container--form .discussion--container--form--post .label--title{
-    margin-top: 4vh;
-}
-.discussion .discussion--container .discussion--container--list--title{
-    margin-top: 4vh;
-}
-.discussion .discussion--container .discussion--container--list--post div{
+.discussion__container__form__post .label__title{
     margin-top: 1rem;
 }
-.discussion .discussion--container .discussion--container--list--post img{
+.discussion__container__list__title{
+    margin-top: 1rem;
+}
+.discussion__container__list__post div{
+    margin-top: 1rem;
+}
+.discussion__container__list__post img{
     width: 3rem;
     margin: 0 0.6rem 0.2rem 0;
     border: 1px solid gray;
