@@ -330,7 +330,7 @@ function createCard() {
 
 //ADD EVENT LISTENER TO CARD CONTAINER
 function addEventListenerToCard() {
-  document.querySelectorAll(".shiplist--container--ship--card--img img").forEach((img) => {
+  document.querySelectorAll(".shiplist__container__ship__card__img img").forEach((img) => {
     img.addEventListener("click", () => {
       const index = parseInt(img.getAttribute("data-index"));
       openModalBox(index);

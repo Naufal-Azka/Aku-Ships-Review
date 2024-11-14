@@ -210,14 +210,15 @@ th {
     padding-block: 2rem;
 }
 .shiplist__container__list__class li{
-    padding: 13px;
+    padding-inline: 2rem;
+    padding-block: 0.7rem;
     border-radius: 30px;
     cursor: pointer;
     font-weight: 300;
     font-size: 16px;
 }
 .active__filter{
-    background-color: black;
+    background-color: rgb(30, 30, 30);
     color: white;
 }
 #shiplist-container-ship .text__h3{
